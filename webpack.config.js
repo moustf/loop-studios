@@ -37,5 +37,7 @@ module.exports = {
     liveReload: true,
     open: true,
   },
-  resolve: [".js", ".jsx", ".json", ".ts"],
+  resolve: {
+    extensions: [".js", ".jsx", ".json", ".ts"],
+  },
 };
