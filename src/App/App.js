@@ -1,11 +1,11 @@
 import React from "react";
+import LandingPage from "./LandingPage/LandingPage";
+import "./App.scss";
 
 export default function App () {
     return (
-        <>
-            <h1>Mustafa Salem</h1>
-            <h4>Junior Web Developer</h4>
-            <p>Hi poplllllleeee</p>
-        </>
+        <div className="container">
+            <LandingPage />
+        </div>
     );
 }
