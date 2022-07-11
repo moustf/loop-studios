@@ -47,6 +47,22 @@
                 font-size: large;
                 text-decoration: none;
                 font-size: xx-large;
+                width: fit-content;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height:0.3rem;
+                    background-color: var(--white);
+                    border-radius: 1rem;
+                    transition: 500ms;
+                    width: 0%;
+                    bottom: -.5rem;
+                    left: 0;
+                  }
+                  &:hover::after {
+                    width: 100%;
+                  }
             }
         }
     }
@@ -76,6 +92,22 @@
                 color: var(--white);
                 font-size: larger;
                 font-weight: bolder;
+                position: relative;
+                width: fit-content;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height:0.3rem;
+                    background-color: var(--white);
+                    border-radius: 1rem;
+                    transition: 500ms;
+                    width: 0%;
+                    bottom: 0rem;
+                    left: 0;
+                  }
+                  &:hover::after {
+                    width: 100%;
+                  }
             }
         }
     }
