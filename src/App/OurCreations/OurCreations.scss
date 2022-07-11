@@ -1,0 +1,82 @@
+/* Starting the styles for the mobile screens. */
+
+.our-creations {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    .our-creations__header {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .text {
+            font-size: xx-large;
+            color: var(--black);
+        }
+        button {
+            display: none;
+        }
+    }
+    .creations {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .see-all {
+        width: 40%;
+        height: 2.5rem;
+        border: 1px solid var(--black);
+        background-color: transparent;
+        align-self : center;
+        font-size: medium;
+        letter-spacing: 5px;
+        cursor: pointer;
+        &:hover {
+            background-color: var(--black);
+            color: var(--white);
+        }
+    }
+}
+
+/* Starting the styles for the tablet and desktop screens */
+@media only screen and (min-width: 787px) {
+    .our-creations {
+        width: 90%;
+        margin-bottom: 2rem;
+        .our-creations__header {
+            width: 68%;
+            justify-content: space-between;
+            transform: translateX(30%);
+            button {
+                display: block;
+                width: 12%;
+                height: 2rem;
+                border: 1px solid var(--black);
+                background-color: transparent;
+                align-self : center;
+                font-size: x-small;
+                letter-spacing: 5px;
+                cursor: pointer;
+                &:hover {
+                    background-color: var(--black);
+                    color: var(--white);
+                }
+            }
+        }
+        .creations {
+            width: 80%;
+            height: 90vh;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            transform: translateX(18%);
+        }
+        .see-all {
+            display: none;
+        }
+    }
+}
